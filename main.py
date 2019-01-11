@@ -26,3 +26,5 @@ if __name__ == '__main__':
         # driver.find_element_by_xpath('//*[@id="test"]/div[2]/div/div[1]/div[1]/a/span').click()
         time.sleep(1200)
         driver.quit()
+        n += 1
+        print('以完成:%d次'%n)
