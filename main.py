@@ -8,7 +8,7 @@ if __name__ == '__main__':
         chrome_options.add_argument('-ignore-certificate-errors')
         # chrome_options.add_argument('--headless')# 开启的话进入无页面模式
         chrome_options.add_argument('--disable-gpu')
-        chrome_options.binary_location = (r'C:\Users\jack8\AppData\Local\Google\Chrome\Application\chrome.exe')
+        chrome_options.binary_location = (r'C:\Users\jack8\AppData\Local\Google\Chrome\Application\chrome.exe')# 用你的电脑上chrome安装地址替换
         driver = webdriver.Chrome(options=chrome_options)
         driver.get('http://spoc.ccnu.edu.cn/starmoocHomepage')
 
