@@ -27,4 +27,4 @@ if __name__ == '__main__':
         time.sleep(1200)
         driver.quit()
         n += 1
-        print('以完成:%d次'%n)
+        print('已完成:%d次'%n)
