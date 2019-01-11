@@ -1,5 +1,5 @@
 # -
-本项目是为女票解决非全硕士刷师大云课堂所设计
+本项目是为女票解决非全硕士刷华师—师大云课堂所设计
 
 *1.下载chrome浏览器并安装（腾讯软件管家可以下载），文件中配备了chromedriver，针对69-71版本的chrome
 （也可以自行到该地址下载对应的驱动http://npm.taobao.org/mirrors/chromedriver/）
