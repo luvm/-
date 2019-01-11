@@ -5,7 +5,7 @@
 （也可以自行到该地址下载对应的驱动http://npm.taobao.org/mirrors/chromedriver/）
 （如果想使用火狐、IE等浏览器，有条件的可以自行更改代码）
 
-*2.自行导入selenium模块，本人是在pycharm环境下运行的
+*2.自行导入selenium模块，本人是在pycharm环境下运行的(cmd中的话 pip install selenium 应该会吧)
 
 *3.然后在main里面将“########”替换成你自己的账号和密码
 
