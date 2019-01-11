@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 if __name__ == '__main__':
-    #test
+    n = 0
     while True:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('-ignore-certificate-errors')
