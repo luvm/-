@@ -24,7 +24,8 @@ if __name__ == '__main__':
         time.sleep(1)
         driver.find_element_by_class_name('icon-wmv').click()
         # driver.find_element_by_xpath('//*[@id="test"]/div[2]/div/div[1]/div[1]/a/span').click()
+        n += 1
+        print('第%d次开始'%n)
         time.sleep(1200)
         driver.quit()
-        n += 1
         print('已完成:%d次'%n)
