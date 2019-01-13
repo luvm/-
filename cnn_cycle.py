@@ -11,9 +11,9 @@ if __name__ == '__main__':
                   '//*[@id="test"]/div[7]/div/div[1]/div[1]/a/span','//*[@id="test"]/div[7]/div/div[2]/div[1]/a/span',
                   '//*[@id="test"]/div[8]/div/div[1]/div[1]/a/span','//*[@id="test"]/div[8]/div/div[2]/div[1]/a/span',
                   '//*[@id="test"]/div[9]/div/div[1]/div[1]/a/span','//*[@id="test"]/div[9]/div/div[2]/div[1]/a/span',]
-    while True:
+    m = 1
+        while True:
         n = 0
-        m = 1
         print('第%d轮循环开始'%m)
         m += 1
         for xpath in xpath_list:
