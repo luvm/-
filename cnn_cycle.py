@@ -30,11 +30,12 @@ if __name__ == '__main__':
             driver.find_element_by_id("password").clear()
             driver.find_element_by_id("password").send_keys("####")# 输入你的密码到####
             driver.find_element_by_id('loginBtn').click()
-
-            time.sleep(1)
+            
+            time.sleep(2)
+            driver.find_element_by_xpath('/html/body/div[4]/div/button').click()
+            time.sleep(2)
             driver.find_element_by_class_name('thumbnail').click()
-
-            time.sleep(1)
+            time.sleep(2)
             driver.find_element_by_xpath(xpath).click()
 
             n += 1
