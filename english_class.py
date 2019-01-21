@@ -6,9 +6,9 @@ def login():
     driver.get('http://spoc.ccnu.edu.cn/starmoocHomepage')
 
     driver.find_element_by_id("loginName").clear()
-    driver.find_element_by_id("loginName").send_keys("2018171143")
+    driver.find_element_by_id("loginName").send_keys("####")#输入你的账号替换####
     driver.find_element_by_id("password").clear()
-    driver.find_element_by_id("password").send_keys("2018171143")
+    driver.find_element_by_id("password").send_keys("####")#输入你的密码替换####
     driver.find_element_by_id('loginBtn').click()
 
 def class_chose():
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     while True:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('-ignore-certificate-errors')
-        # chrome_options.add_argument('--headless')
+        # chrome_options.add_argument('--headless')#进入无页面模式请取消注释
         chrome_options.add_argument('--disable-gpu')
         chrome_options.binary_location = (r'C:\Users\jack8\AppData\Local\Google\Chrome\Application\chrome.exe')
         driver = webdriver.Chrome(options=chrome_options)
