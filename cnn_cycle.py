@@ -35,10 +35,8 @@ if __name__ == '__main__':
             driver.find_element_by_class_name('thumbnail').click()
 
             time.sleep(1)
-            # driver.find_element_by_class_name('icon-wmv').click()
             driver.find_element_by_xpath(xpath).click()
-            # time.sleep(1)
-            # driver.find_element_by_xpath('//*[@id="test"]/div[7]/div/div[1]/div[2]/h5/div/button').click()
+
             n += 1
             print('第%d次开始' % n)
             time.sleep(random.randint(600,1800))
