@@ -13,9 +13,9 @@ if __name__ == '__main__':
         driver.get('http://spoc.ccnu.edu.cn/starmoocHomepage')
 
         driver.find_element_by_id("loginName").clear()
-        driver.find_element_by_id("loginName").send_keys("#########")# 输入你的账号替换########
+        driver.find_element_by_id("loginName").send_keys("####")# 输入你的账号替换####
         driver.find_element_by_id("password").clear()
-        driver.find_element_by_id("password").send_keys("########")# 输入你的密码替换########
+        driver.find_element_by_id("password").send_keys("####")# 输入你的密码替换####
         driver.find_element_by_id('loginBtn').click()
 
         time.sleep(1)
