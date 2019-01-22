@@ -18,7 +18,7 @@ def class_chose():
     driver.find_element_by_class_name('border').click()
     time.sleep(2)
 
-def swith_close(n):
+def switch_close(n):
     print('第%d次开始' % n)
     # time.sleep(2)
     time.sleep(random.randint(600,1200))
@@ -52,7 +52,7 @@ def time_getter():
             li.click()
             li.find_element_by_xpath('//*[@id="test"]/div/div/div/div/div/div/div[{}]/div/div/div[{}]/div/div/div[1]/div/div/div[{}]/div/div/div[{}]/div/div/div[1]/a/span'.format(t,a,b,i)).click()
             n += 1
-            swith_close(n)
+            switch_close(n)
     driver.quit()
 
 if __name__ == '__main__':
