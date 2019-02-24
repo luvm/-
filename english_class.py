@@ -1,6 +1,12 @@
 from selenium import webdriver
 import time
 import random
+import pytesseract
+from PIL import Image
+import base64
+
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe"#你需要安装Tesseract，这是默认安装地址
+filePath = 'D:\luvm\onedrive\python_class\工具\cnn_class\pic.png'#选一个图片放置位
 
 def login():
     driver.get('http://spoc.ccnu.edu.cn/starmoocHomepage')
@@ -9,6 +15,13 @@ def login():
     driver.find_element_by_id("loginName").send_keys("####")#输入你的账号替换####
     driver.find_element_by_id("password").clear()
     driver.find_element_by_id("password").send_keys("####")#输入你的密码替换####
+    src = driver.find_element_by_id('verifCodeImg').get_attribute('src').split(',',1)[1]
+    img=base64.b64decode(src)
+    with open(filePath,'wb') as f:
+        f.write(img)
+    image_en = Image.open('pic.png')
+    text_en = pytesseract.image_to_string(image_en)
+    driver.find_element_by_id('verifCode').send_keys(text_en)
     driver.find_element_by_id('loginBtn').click()
 
 def class_chose():
